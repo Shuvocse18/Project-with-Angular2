@@ -1,0 +1,10 @@
+﻿<div id="projectsearch">
+    <h4> Search Project</h4>
+    <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+    <div>
+        <div *ngFor="let project of PROJECTS | async"
+             (click)="gotoDetail(project)" class="search-result">
+            {{project.name}}
+        </div>
+    </div>
+</div>

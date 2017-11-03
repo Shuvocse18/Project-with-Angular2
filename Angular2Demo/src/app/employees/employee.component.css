@@ -1,0 +1,49 @@
+﻿body {
+    margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+
+.intro{
+	height:100%;
+	width:100%;
+	margin:right-side;
+	background-image:url("images3.jpg");
+	display:table;
+	top:0;
+	background-size:cover;
+	}
+.intro.inner{
+	display: table-cell;
+	vertical-align:middle;
+	width:100%;
+	max-width:none;
+	
+}
+.content{
+	max-width:500px;
+	margin:0 auto;
+	text-align:center;
+}
+.content h1{
+	
+	font-family:'Raleway',sans-serif;
+	color:#f5f5f5;
+	text-shadow: 0px 0px 300px #000;
+	font-size:500%;
+}
+
+.tbl{
+	font-family:'Oswald',sans-serif;
+	border-radius:9px;
+	color:#f3f2f6;
+	text-shadow: 0px 0px 300px #000;
+	font-size:400%;
+	background-color:#f5f5f5;
+	padding:10px 20px;
+	text-decoration:none;
+}
+.tbl:hover{
+	background-color: #f5f5f5
+}

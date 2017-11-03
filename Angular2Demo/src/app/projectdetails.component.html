@@ -1,0 +1,28 @@
+﻿<div *ngIf="Project">
+    <h2>{{Project.name}} Project details!</h2>
+    <div>
+        
+     <pre> <font size="4" color="blue"> <label>Projectid:</label>     {{Project.id}} </font></pre>
+    
+    </div>
+
+    <div>
+        <h3><label>Project Name </label></h3>
+        <input required [(ngModel)]="Project.name" placeholder="Project Name" />
+
+        <h3><label>Project Size </label></h3>
+        <input required [(ngModel)]="Project.size" placeholder="Size" />
+
+        <h3><label>Project Price </label></h3>
+        <input required [(ngModel)]="Project.price" placeholder="Price" />
+
+        <h3><label>Project Constructon Date </label></h3>
+        <input required [(ngModel)]="Project.construction_date" placeholder="Construction Date" />
+
+    </div>
+    <button (click)="goBack()">Back</button>
+    <button (click)="save()">Save Project</button>
+</div>
+
+
+

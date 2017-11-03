@@ -1,0 +1,27 @@
+﻿<h2>Luminux Projects</h2>
+<div>
+    <label>Project name:</label> <input #projectName />
+    <button (click)="add(projectName.value); projectName.value=''">
+        Add Project
+    </button>
+</div>
+<ul class="heroes">
+    <li *ngFor="let project of Project"
+        [class.selected]="project === selectedApp"
+        (click)="onSelect(Project)">
+        <span class="badge">{{project.id}}</span> {{project.name}} <span class="badge">{{project.size}}</span>|{{project.price}}
+        |{{project.construction_date}}
+
+        <button class="delete"
+                (click)="delete(project); $event.stopPropagation()">
+            x
+        </button>
+    </li>
+</ul>
+<div *ngIf="selectedApp">
+    <h2>
+        {{selectedApp.name | uppercase}} 
+    </h2>
+    <button (click)="gotoDetail()">View Project Details</button>
+</div>
+
